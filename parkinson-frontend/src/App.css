@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:white;
+}
+
+/* MAIN CONTAINER */
+
+.main{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+/* CARD */
+
+.card{
+  width:100%;
+  max-width:450px;
+  padding:40px;
+  border-radius:18px;
+
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.5),
+    inset 0 1px 1px rgba(255,255,255,0.05);
+}
+
+/* TITLE */
+
+.title{
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  text-align:center;
+  font-size:14px;
+  color:rgba(255,255,255,0.7);
+  margin-bottom:30px;
+}
+
+/* FILE INPUT */
+
+input[type="file"]{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:1px dashed rgba(255,255,255,0.3);
+  background:rgba(255,255,255,0.04);
+  color:white;
+  margin-bottom:20px;
+}
+
+input[type="file"]::file-selector-button{
+  background:#6366f1;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  color:white;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+/* BUTTON */
+
+button{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:none;
+  background:#6366f1;
+  color:white;
+  font-size:16px;
+  font-weight:500;
+  cursor:pointer;
+  transition:background 0.2s ease;
+}
+
+button:hover{
+  background:#4f46e5;
+}
+
+/* LOADING */
+
+.loading{
+  margin-top:20px;
+  padding:12px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.08);
+  text-align:center;
+  font-size:14px;
+}
+
+/* RESULT BOX */
+
+.resultBox{
+  margin-top:25px;
+  padding:20px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.resultBox h2{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.resultBox p{
+  font-size:16px;
+  color:#e2e8f0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:480px){
+
+  .card{
+    padding:30px 20px;
+  }
+
+  .title{
+    font-size:24px;
+  }
+
+}
